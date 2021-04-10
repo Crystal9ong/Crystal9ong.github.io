@@ -77,6 +77,7 @@ nav {
 
 .concept .container h3 {
   font-weight: 700;
+  padding-bottom: 20px;
 }
 
 .concept .row {
@@ -149,6 +150,11 @@ nav {
   padding: 100px 0;
   background-color: #ed7325;
   color: white;
+}
+
+.podcasts .container h3 {
+  padding-bottom: 20px;
+  font-weight: 700;
 }
 
 .article {

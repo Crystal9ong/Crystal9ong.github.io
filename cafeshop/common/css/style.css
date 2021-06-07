@@ -1,0 +1,363 @@
+/*-----------------Global------------------*/
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+html,
+body {
+  font-family: "微軟正黑體", "arial";
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/*------------------Layout------------------*/
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-20 {
+  width: 23%;
+}
+
+.space {
+  padding: 200px 0;
+}
+
+/*------------------Header------------------*/
+.navbar {
+  width: 100%;
+  height: 64px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: inline-block;
+  width: 160px;
+  height: 64px;
+  background-image: url("../../images/common/logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav {
+  float: right;
+}
+
+.navbar .nav .nav-item {
+  display: inline;
+}
+
+.nav-link {
+  color: #fefefe;
+  padding: 20px 16px;
+}
+/*------------------Banner------------------*/
+.banner {
+  padding-top: 224px;
+  padding-bottom: 160px;
+  background-image: url(../../images/bg/bg001.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner .logo-image {
+  width: 320px;
+  height: 320px;
+  background-image: url(../../images/common/logo-w.png);
+  margin: 0 auto;
+  background-position: center;
+  background-size: contain;
+}
+
+/*-----------------Button-----------------*/
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+
+.btn-lg {
+  padding: 8px 32px;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.btn-solid {
+  background-color: #d5a26f;
+  color: white;
+}
+
+.btn-solid:hover {
+  background-color: #b2875c;
+}
+
+.btn-hollow {
+  border: #d5a26f 1px solid;
+  color: #d5a26f;
+}
+
+.btn-hollow:hover {
+  background-color: #d5a26f;
+  color: white;
+}
+
+.btn-container .btn {
+  margin: 0 12px;
+}
+
+/*-----------------About-----------------*/
+
+.about-img .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  background-color: #efefef;
+}
+
+.about .title {
+  font-size: 2rem;
+  margin: 80px 0 24px 0;
+  color: #333;
+}
+
+.about .para {
+  font-size: 1rem;
+  line-height: 32px;
+  margin: 0 0 24px 0;
+  color: #333;
+}
+
+.about-info {
+  padding-right: 10px;
+}
+
+.about-img {
+  padding-left: 10px;
+}
+
+/*--------------services-------------*/
+
+.services .bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.services .img img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+
+.services .bottom .para {
+  font-size: 16px;
+  margin-bottom: 24px;
+  line-height: 24px;
+}
+
+/*---------------Intro--------------*/
+
+.intro .title {
+  font-size: 3rem;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro .para {
+  line-height: 32px;
+}
+
+/*---------------Reservation--------------*/
+
+.reservation {
+  background-image: url("../../images/bg/bg002.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.reservation .title {
+  color: #fefefe;
+}
+
+.reservation .para {
+  color: #fefefe;
+}
+
+.reservation .btn-center {
+  text-align: center;
+}
+
+/*---------------menu--------------*/
+
+.menu .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu .more {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu .img {
+  height: 200px;
+}
+
+.menu .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.more {
+  margin-bottom: 24px;
+}
+
+.more .title {
+  color: #d5a26f;
+  font-size: 24px;
+  padding-left: 16px;
+  border-left: 5px solid #d5a26f;
+}
+
+.menu .bottom {
+  margin-bottom: 60px;
+}
+
+/*---------------preview--------------*/
+
+.bottom .preview .title {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.bottom .preview .subtitle {
+  font-size: 16px;
+  color: #d5a26f;
+  margin-bottom: 16px;
+}
+
+/*--------------contact--------------*/
+.contact {
+  background-color: #efefef;
+}
+
+.info .detail .item {
+  margin-bottom: 40px;
+}
+
+.info .detail {
+  padding-top: 40px;
+}
+
+.info .detail .title {
+  margin-bottom: 16px;
+  color: #d5a26f;
+}
+
+.info .detail .title span {
+  display: inline-block;
+  border-bottom: 2px solid;
+  line-height: 32px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*--------------footer--------------*/
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url(../../images/bg/bg003.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.footer .logo-image {
+  width: 320px;
+  height: 320px;
+  background-image: url(../../images/common/logo-w.png);
+  margin: 0 auto;
+  background-position: center;
+  background-size: contain;
+}
+
+.container .content {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.container .content a {
+  color: white;
+}
+
+.copyright {
+  padding: 20px 0;
+  background-color: black;
+}
+
+.copyright p {
+  color: white;
+  text-align: center;
+}
